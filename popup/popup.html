@@ -1,0 +1,27 @@
+<html>
+	<head>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/compromise.min.js"></script>
+	<script src="js/porter.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="popup.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	</head>
+	<body>
+	<div class="container-fluid">
+		<h1>Text Summarizer</h1>
+		<div id="result_div" class="well well-lg"></div>
+		<div id="additional_information_div" class="alert alert-success"></div>
+		<form id="number_of_lines_form">
+			<div class="form-group">
+				<label for="number_of_lines">Number of Lines:</label>
+				<select class="form-control" id="number_of_lines">
+				</select>
+			</div>
+		</form>
+		<div id="no_text_div" class="alert alert-danger">
+			Please select a text to summarize
+		</div>
+	</div>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+{
+
+  "manifest_version": 2,
+  "name": "Summarizer",
+  "version": "1.0",
+
+  "description": "Summarizes any text",
+
+  "icons": {
+    "32": "icons/summary-32.png"
+  },
+
+  "browser_action": {
+    "default_icon": "icons/summary-32.png",
+    "default_title": "Summarizer",
+    "default_popup": "popup/popup.html"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["summarizer.js"]
+    }
+  ]
+}
